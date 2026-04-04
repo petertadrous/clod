@@ -4,7 +4,7 @@ description: >
   Run a comprehensive security audit of a project using SAST tools, dependency scanning,
   and threat modeling. Use when asked to audit, scan, or assess security posture.
 model: opus
-allowed-tools: Read, Grep, Glob, Bash(trivy *), Bash(gh *)
+tools: Read, Grep, Glob, Bash(trivy *), Bash(gh *)
 ---
 
 Skills:

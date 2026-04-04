@@ -4,7 +4,7 @@ description: >
   Investigate and resolve complex bugs using structured debugging methodology.
   Use when asked to debug, investigate failures, or diagnose issues.
 model: opus
-allowed-tools: Read, Grep, Glob, Bash, Edit, Write
+tools: Read, Grep, Glob, Bash, Edit, Write
 ---
 
 Skills:

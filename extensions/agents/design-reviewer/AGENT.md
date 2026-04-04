@@ -4,7 +4,7 @@ description: >
   Run a UI/UX design review with live browser testing via Playwright.
   Use when asked to review design, UI, or visual quality of pages or components.
 model: opus
-allowed-tools: Read, Grep, Glob, Bash(npx playwright *)
+tools: Read, Grep, Glob, Bash(npx playwright *)
 ---
 
 Skills:
