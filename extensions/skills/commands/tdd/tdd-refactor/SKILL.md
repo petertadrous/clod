@@ -1,16 +1,7 @@
 ---
 name: tdd-refactor
 description: Refactor code with confidence using comprehensive test safety net. Applies design patterns, improves code quality, and optimizes performance while maintaining all tests green throughout the process.
-license: MIT
 disable-model-invocation: true
-metadata:
-  author: https://github.com/wshobson
-  version: "1.0.0"
-  domain: testing
-  triggers: tdd refactor, refactor phase, improve code, clean up, design patterns
-  role: expert
-  scope: implementation
-  output-format: code
 ---
 
 Refactor code with confidence using comprehensive test safety net.

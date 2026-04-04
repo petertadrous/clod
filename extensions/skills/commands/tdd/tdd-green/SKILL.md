@@ -1,16 +1,7 @@
 ---
 name: tdd-green
 description: Implement minimal code to make failing tests pass in TDD green phase. Focuses on simplicity, avoiding over-engineering while ensuring all tests become green. Uses fake-it, obvious implementation, and triangulation techniques.
-license: MIT
 disable-model-invocation: true
-metadata:
-  author: https://github.com/wshobson
-  version: "1.0.0"
-  domain: testing
-  triggers: tdd green, make tests pass, green phase, minimal implementation
-  role: expert
-  scope: implementation
-  output-format: code
 ---
 
 Implement minimal code to make failing tests pass in TDD green phase.

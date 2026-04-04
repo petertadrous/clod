@@ -1,16 +1,7 @@
 ---
 name: tdd-cycle
 description: Execute a comprehensive Test-Driven Development workflow with strict red-green-refactor discipline. Enforces test-first development through coordinated agent orchestration with configurable coverage thresholds and refactoring triggers.
-license: MIT
 disable-model-invocation: true
-metadata:
-  author: https://github.com/wshobson
-  version: "1.0.0"
-  domain: testing
-  triggers: tdd cycle, tdd workflow, test driven development, red green refactor, full tdd
-  role: expert
-  scope: testing
-  output-format: code
 ---
 
 Execute a comprehensive Test-Driven Development (TDD) workflow with strict red-green-refactor discipline.

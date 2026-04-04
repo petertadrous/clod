@@ -1,16 +1,7 @@
 ---
 name: refactor-clean
-description: Analyze and refactor code to improve quality, maintainability, and performance. Applies clean code principles, SOLID design patterns, and modern software engineering best practices with practical improvements that enhance code quality without over-engineering.
-license: MIT
+description: Analyze and refactor code to improve quality, maintainability, and performance. Applies clean code principles, SOLID design patterns, and modern best practices without over-engineering.
 disable-model-invocation: true
-metadata:
-  author: https://github.com/wshobson
-  version: "1.0.0"
-  domain: commands
-  triggers: refactor, clean code, code quality, code smells, SOLID, refactoring
-  role: expert
-  scope: implementation
-  output-format: code
 ---
 
 # Refactor and Clean Code

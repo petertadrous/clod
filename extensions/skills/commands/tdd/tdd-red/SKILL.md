@@ -1,16 +1,7 @@
 ---
 name: tdd-red
 description: Write comprehensive failing tests following TDD red phase principles. Generates tests that properly define expected behavior, ensuring they fail for the right reasons and establishing a solid foundation for implementation.
-license: MIT
 disable-model-invocation: true
-metadata:
-  author: https://github.com/wshobson
-  version: "1.0.0"
-  domain: testing
-  triggers: tdd red, failing tests, write tests first, test first, red phase
-  role: expert
-  scope: testing
-  output-format: code
 ---
 
 Write comprehensive failing tests following TDD red phase principles.

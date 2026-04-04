@@ -1,15 +1,6 @@
 ---
 name: security-review
-description: Complete a security review of the pending changes on the current branch. Performs a security-focused code review to identify high-confidence security vulnerabilities with real exploitation potential. Uses multi-phase analysis with false positive filtering.
-license: MIT
-metadata:
-  author: https://github.com/OneRedOak
-  version: "1.0.0"
-  domain: security
-  triggers: security review, security audit, vulnerability scan, security check, code security
-  role: expert
-  scope: review
-  output-format: markdown
+description: Security review of pending branch changes. Identifies high-confidence security vulnerabilities with real exploitation potential using multi-phase analysis and false positive filtering.
 ---
 
 You are a senior security engineer conducting a focused security review of the changes on this branch.
