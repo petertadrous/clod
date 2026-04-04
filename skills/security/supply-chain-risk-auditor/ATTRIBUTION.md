@@ -1,0 +1,1 @@
+Based on [Supply Chain Risk Auditor](https://github.com/trailofbits/skills/tree/main/plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor) by Trail of Bits. Licensed under CC-BY-SA-4.0. Modifications: None.

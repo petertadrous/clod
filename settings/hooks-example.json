@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash /path/to/clod/hooks/python-quality-gate/python_quality_gate.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
