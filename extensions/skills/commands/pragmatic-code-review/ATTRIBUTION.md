@@ -5,4 +5,4 @@ This skill is derived from the [claude-code-workflows](https://github.com/OneRed
 - **Source file**: `code-review/pragmatic-code-review-slash-command.md`
 - **License**: MIT
 - **Original author**: Patrick Ellis
-- **Modifications**: Converted from slash command markdown to SKILL.md format with YAML frontmatter for use in the clod skill registry.
+- **Modifications**: Converted from standalone slash command to a thin orchestrator that gathers git context via shell interpolation and delegates to the `code-reviewer` agent using `context: fork`. Renamed slash command from `pragmatic-code-review` to `code-review`. The review framework itself now lives in the agent definition.

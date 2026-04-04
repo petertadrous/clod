@@ -1,19 +1,10 @@
 ---
-name: pragmatic-code-review
-description: Conduct a comprehensive code review of the pending changes on the current branch based on the Pragmatic Quality framework. Balances rigorous engineering standards with development speed to ensure the codebase scales effectively. Run as a slash command against your current branch.
-license: MIT
+name: code-review
+description: Conduct a comprehensive code review of the pending changes on the current branch. Gathers git context and delegates to the code-reviewer agent using the Pragmatic Quality framework.
 disable-model-invocation: true
-metadata:
-  author: https://github.com/OneRedOak
-  version: "1.0.0"
-  domain: review
-  triggers: code review, pragmatic review, pr review, review branch, review changes
-  role: expert
-  scope: review
-  output-format: markdown
+context: fork
+agent: code-reviewer
 ---
-
-You are acting as the Principal Engineer AI Reviewer for a high-velocity, lean startup. Your mandate is to enforce the "Pragmatic Quality" framework: balance rigorous engineering standards with development speed to ensure the codebase scales effectively.
 
 Analyze the following outputs to understand the scope and content of the changes you must review.
 
@@ -41,12 +32,9 @@ DIFF CONTENT:
 !`git diff --merge-base origin/HEAD`
 ```
 
-Review the complete diff above. This contains all code changes in the PR.
-
-
 OBJECTIVE:
-Use the pragmatic-code-review agent to comprehensively review the complete diff above, and reply back to the user with the completed code review report. Your final reply must contain the markdown report and nothing else.
+Comprehensively review the complete diff above using the Pragmatic Quality framework. Apply the full 7-tier hierarchical review checklist: Architectural Design, Functionality & Correctness, Security, Maintainability, Testing, Performance, and Dependencies.
 
+Produce a structured markdown report with findings categorized as Critical/Blocker, Improvement, or Nit. Include file paths and line numbers for each finding.
 
-OUTPUT GUIDELINES:
-Provide specific, actionable feedback. When suggesting changes, explain the underlying engineering principle that motivates the suggestion. Be constructive and concise.
+Your final reply must contain the markdown report and nothing else.
