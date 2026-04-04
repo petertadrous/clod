@@ -1,1 +1,0 @@
-Based on [Semgrep Rule Creator](https://github.com/trailofbits/skills/tree/main/plugins/semgrep-rule-creator/skills/semgrep-rule-creator) by Trail of Bits. Licensed under CC-BY-SA-4.0. Modifications: None.

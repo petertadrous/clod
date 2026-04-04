@@ -6,7 +6,7 @@ This repository aggregates Claude Code skills, agents, and hooks from multiple o
 
 ### Trail of Bits (CC-BY-SA-4.0)
 - [trailofbits/skills](https://github.com/trailofbits/skills) — Security-focused skills
-  - static-analysis, semgrep-rule-creator, supply-chain-risk-auditor, smart-contract-workflow
+  - supply-chain-risk-auditor, smart-contract-workflow
 
 ### Jeff Allan (MIT)
 - [Jeffallan/claude-skills](https://github.com/Jeffallan/claude-skills) — Full-stack development skills
@@ -26,7 +26,7 @@ This repository aggregates Claude Code skills, agents, and hooks from multiple o
 
 ### wshobson (MIT)
 - [wshobson/commands](https://github.com/wshobson/commands) — Development commands
-  - incident-response, refactor-clean, tdd-red, tdd-green, tdd-refactor, tdd-cycle, ml-pipeline
+  - refactor-clean, tdd-red, tdd-green, tdd-refactor, tdd-cycle, ml-pipeline
 - [wshobson/agents](https://github.com/wshobson/agents) — Specialized agents
   - langchain-architecture
 

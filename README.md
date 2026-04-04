@@ -22,7 +22,7 @@ settings/        Example hook configurations
 |-------|-----------------|-------|
 | code-reviewer | pragmatic-code-review, design-review, security-review, coding-principles | Read-only |
 | design-reviewer | design-review, frontend-design | Read-only + Playwright |
-| security-auditor | security-review, static-analysis, security-audit, supply-chain-risk-auditor | Read-only + semgrep, trivy, gh |
+| security-auditor | security-review, security-audit, supply-chain-risk-auditor | Read-only + trivy, gh |
 | debugger | debugging-skill, testing-principles | Full access |
 
 ## Installation
