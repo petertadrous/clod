@@ -47,7 +47,7 @@ Items are sourced from multiple repositories under different licenses. Every fol
 
 | License | Items |
 |---------|-------|
-| MIT | jeffallan, iannuttall, wshobson, OneRedOak, shinpr, lackeyjb, Lum1104, CodyLunders, our compositions |
+| MIT | jeffallan, iannuttall, wshobson, OneRedOak, shinpr, Lum1104, CodyLunders, our compositions |
 | CC-BY-SA-4.0 | Trail of Bits security skills (derivatives must use same license) |
 | Apache-2.0 | Select Anthropic skills (canvas-design, frontend-design, webapp-testing, skill-creator) |
 | Proprietary | Anthropic document skills (pdf, docx, pptx, xlsx) — not redistributed, README pointers only |

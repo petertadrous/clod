@@ -16,10 +16,6 @@ This repository aggregates Claude Code skills, agents, and hooks from multiple o
 - [shinpr/claude-code-workflows](https://github.com/shinpr/claude-code-workflows) — Development principles
   - coding-principles, testing-principles
 
-### lackeyjb (MIT)
-- [lackeyjb/playwright-skill](https://github.com/lackeyjb/playwright-skill) — Browser automation
-  - playwright-skill
-
 ### OneRedOak (MIT)
 - [OneRedOak/claude-code-workflows](https://github.com/OneRedOak/claude-code-workflows) — Code review workflows
   - pragmatic-code-review, security-review, design-review
