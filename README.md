@@ -5,11 +5,15 @@ A curated collection of Claude Code skills, agents, and hooks — sourced from t
 ## Structure
 
 ```
-skills/          Skills (SKILL.md) — knowledge and methodology Claude applies
-  commands/      Slash-command skills (disable-model-invocation: true)
-agents/          Agents (AGENT.md) — isolated execution contexts that compose skills
-hooks/           Hook scripts referenced from settings.json
-settings/        Example hook configurations
+extensions/                Content to install into ~/.claude/ or .claude/
+  skills/                  Skills (SKILL.md) — knowledge and methodology
+    commands/              Slash-command skills (disable-model-invocation: true)
+  agents/                  Agents (AGENT.md) — isolated execution contexts
+  hooks/                   Hook scripts referenced from settings.json
+  settings/                Example hook configurations
+
+plans/                     Build plans and decision history
+references/                Documentation references
 ```
 
 ## Architecture
@@ -27,7 +31,15 @@ settings/        Example hook configurations
 
 ## Installation
 
-Symlink or copy the skills/agents/hooks you need into your `~/.claude/` or project `.claude/` directory.
+Symlink or copy from `extensions/` into your `~/.claude/` or project `.claude/` directory:
+
+```bash
+# Example: install all skills globally
+ln -s /path/to/clod/extensions/skills ~/.claude/skills
+
+# Example: install a single agent to a project
+cp -r /path/to/clod/extensions/agents/code-reviewer .claude/agents/
+```
 
 ## Licensing
 
