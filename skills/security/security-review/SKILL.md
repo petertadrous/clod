@@ -154,20 +154,19 @@ FALSE POSITIVE FILTERING:
 > 7. A lack of hardening measures. Code is not expected to implement all security best practices, only flag concrete vulnerabilities.
 > 8. Race conditions or timing attacks that are theoretical rather than practical issues. Only report a race condition if it is concretely problematic.
 > 9. Vulnerabilities related to outdated third-party libraries. These are managed separately and should not be reported here.
-> 10. Memory safety issues such as buffer overflows or use-after-free-vulnerabilities are impossible in rust. Do not report memory safety issues in rust or any other memory safe languages.
+> 10. Memory safety issues such as buffer overflows or use-after-free in safe code written in memory-safe languages (e.g., Rust, Go, C#). Do not report memory safety issues in safe code paths. However, code within explicit unsafe blocks or equivalent escape hatches (unsafe in Rust, unsafe in C#, cgo in Go) should still be reviewed for memory safety issues.
 > 11. Files that are only unit tests or only used as part of running tests.
 > 12. Log spoofing concerns. Outputting un-sanitized user input to logs is not a vulnerability.
 > 13. SSRF vulnerabilities that only control the path. SSRF is only a concern if it can control the host or protocol.
-> 14. Including user-controlled content in AI system prompts is not a vulnerability.
-> 15. Regex injection. Injecting untrusted content into a regex is not a vulnerability.
-> 16. Regex DOS concerns.
+> 14. Regex injection. Injecting untrusted content into a regex is generally not a vulnerability unless the regex is used in security-critical logic such as authorization checks, input validation gates, or access control decisions.
+> 15. Regex DOS concerns.
 > 16. Insecure documentation. Do not report any findings in documentation files such as markdown files.
 > 17. A lack of audit logs is not a vulnerability.
 >
 > PRECEDENTS -
 > 1. Logging high value secrets in plaintext is a vulnerability. Logging URLs is assumed to be safe.
 > 2. UUIDs can be assumed to be unguessable and do not need to be validated.
-> 3. Environment variables and CLI flags are trusted values. Attackers are generally not able to modify them in a secure environment. Any attack that relies on controlling an environment variable is invalid.
+> 3. Environment variables and CLI flags are trusted values. Attackers are generally not able to modify them in a secure environment. Any attack that relies on controlling an environment variable is invalid. Note: this assumption may not hold in shared CI/CD runners or multi-tenant environments where env vars may be populated from untrusted sources.
 > 4. Resource management issues such as memory or file descriptor leaks are not valid.
 > 5. Subtle or low impact web vulnerabilities such as tabnabbing, XS-Leaks, prototype pollution, and open redirects should not be reported unless they are extremely high confidence.
 > 6. React and Angular are generally secure against XSS. These frameworks do not need to sanitize or escape user input unless it is using dangerouslySetInnerHTML, bypassSecurityTrustHtml, or similar methods. Do not report XSS vulnerabilities in React or Angular components or tsx files unless they are using unsafe methods.
