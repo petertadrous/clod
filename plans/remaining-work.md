@@ -37,7 +37,6 @@ All newly fetched SKILL.md files must be audited for unsupported frontmatter. Su
 |-------|-------------|---------|
 | python-pro | `extensions/skills/python/python-pro/` | MIT |
 | api-designer | `extensions/skills/architecture/api-designer/` | MIT |
-| microservices-architect | `extensions/skills/architecture/microservices-architect/` | MIT |
 | sql-pro | `extensions/skills/architecture/sql-pro/` | MIT |
 
 Source: github.com/Jeffallan/claude-skills — fetch SKILL.md + reference files

@@ -10,7 +10,7 @@ This repository aggregates Claude Code skills, agents, and hooks from multiple o
 
 ### Jeff Allan (MIT)
 - [Jeffallan/claude-skills](https://github.com/Jeffallan/claude-skills) — Full-stack development skills
-  - fullstack-guardian, api-designer, microservices-architect, sql-pro, python-pro, django-expert, nextjs-developer, vue-expert, angular-architect, kubernetes-specialist, terraform-engineer
+  - fullstack-guardian, api-designer, sql-pro, python-pro, django-expert, nextjs-developer, vue-expert, angular-architect, kubernetes-specialist, terraform-engineer
 
 ### shinpr (MIT)
 - [shinpr/claude-code-workflows](https://github.com/shinpr/claude-code-workflows) — Development principles

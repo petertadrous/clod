@@ -74,7 +74,6 @@ Everything is a skill, agent, or hook. Skills that are slash-command-only get `d
 │   │
 │   ├── architecture/
 │   │   ├── api-designer/                 # jeffallan — MIT (Tier 2)
-│   │   ├── microservices-architect/      # jeffallan — MIT (Tier 2)
 │   │   └── sql-pro/                      # jeffallan — MIT (Tier 2)
 │   │
 │   ├── python/
@@ -211,7 +210,7 @@ Every folder with sourced content gets:
 
 ### Phase 2: Tier 2 (18 items — stack-specific + combined builds)
 
-9. **jeffallan** (4 skills): python-pro, api-designer, microservices-architect, sql-pro → MIT
+9. **jeffallan** (3 skills): python-pro, api-designer, sql-pro → MIT
 10. **Anthropic redistributable** (2 skills): canvas-design, frontend-design → Apache-2.0
 11. **Anthropic non-redistributable** (5 items): pdf, docx, pptx, xlsx, doc-coauthoring → README pointers only
 12. **Build Combined A**: security-audit skill (Trail of Bits base + jeffallan tools + OneRedOak filtering) → CC-BY-SA-4.0
