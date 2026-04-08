@@ -138,51 +138,43 @@ exclude_lines = [
 ]
 ```
 
-## Poetry Project Management
+## uv Project Management (Default)
 
-```toml
-# pyproject.toml for Poetry
-[tool.poetry]
-name = "myproject"
-version = "0.1.0"
-description = "A Python project"
-authors = ["Your Name <you@example.com>"]
-readme = "README.md"
-license = "MIT"
-packages = [{include = "myproject", from = "src"}]
+uv is the recommended package manager. Fast, reliable, and compatible with standard pyproject.toml.
 
-[tool.poetry.dependencies]
-python = "^3.11"
-requests = "^2.31.0"
-pydantic = "^2.5.0"
-
-[tool.poetry.group.dev.dependencies]
-pytest = "^7.4.0"
-pytest-cov = "^4.1.0"
-mypy = "^1.7.0"
-black = "^23.11.0"
-ruff = "^0.1.6"
-
-[tool.poetry.scripts]
-myproject = "myproject.cli:main"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+```bash
+# uv commands
+uv init myproject              # Initialize new project
+uv add requests                # Add dependency
+uv add --dev pytest            # Add dev dependency
+uv sync                        # Install/sync all dependencies
+uv run pytest                  # Run command in managed venv
+uv build                       # Build package
+uv publish                     # Publish to PyPI
+uv lock                        # Generate/update uv.lock
+uv export --format requirements-txt > requirements.txt
 ```
 
 ```bash
-# Poetry commands
-poetry init                    # Initialize new project
-poetry add requests            # Add dependency
-poetry add --group dev pytest  # Add dev dependency
-poetry install                 # Install dependencies
-poetry update                  # Update dependencies
-poetry shell                   # Activate virtual environment
-poetry run pytest              # Run command in venv
-poetry build                   # Build package
-poetry publish                 # Publish to PyPI
-poetry export -f requirements.txt --output requirements.txt
+# Python version management with uv
+uv python install 3.12         # Install a Python version
+uv python pin 3.12             # Pin version for project
+uv venv                        # Create virtual environment
+```
+
+## Pipenv (Only When Pipfile Exists)
+
+Use Pipenv only when the project already has a `Pipfile`. Do not introduce Pipenv into projects that use pyproject.toml + uv.
+
+```bash
+# Pipenv commands
+pipenv install                 # Install from Pipfile
+pipenv install requests        # Add dependency
+pipenv install --dev pytest    # Add dev dependency
+pipenv run pytest              # Run command in venv
+pipenv shell                   # Activate virtual environment
+pipenv lock                    # Generate Pipfile.lock
+pipenv requirements > requirements.txt  # Export requirements
 ```
 
 ## Virtual Environments
@@ -276,9 +268,13 @@ mypy>=1.7.0
 black>=23.11.0
 ruff>=0.1.6
 
-# Generate from Poetry
-poetry export -f requirements.txt --output requirements.txt --without-hashes
-poetry export -f requirements.txt --with dev --output requirements-dev.txt
+# Generate from uv
+uv export --format requirements-txt > requirements.txt
+uv export --format requirements-txt --all-groups > requirements-dev.txt
+
+# Generate from Pipenv (if Pipfile exists)
+pipenv requirements > requirements.txt
+pipenv requirements --dev > requirements-dev.txt
 ```
 
 ## Building and Distribution
@@ -375,12 +371,14 @@ requests>=2.31.0,<3.0.0
 pydantic>=2.5.0,<3.0.0
 
 # Lock files
-# Poetry: poetry.lock
+# uv: uv.lock
+# Pipenv: Pipfile.lock
 # pip: requirements.txt with exact versions
 pip freeze > requirements-lock.txt
 
 # Update dependencies
-poetry update
+uv lock --upgrade              # uv
+pipenv update                  # Pipenv (if Pipfile exists)
 pip install --upgrade -r requirements.txt
 ```
 
