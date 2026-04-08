@@ -91,11 +91,6 @@ Everything is a skill, agent, or hook. Skills that are slash-command-only get `d
 │   │   └── terraform-engineer/          # jeffallan — MIT (Tier 3)
 │   │
 │   ├── commands/                         # All disable-model-invocation: true skills
-│   │   ├── tdd/                          # wshobson — MIT
-│   │   │   ├── tdd-red/
-│   │   │   ├── tdd-green/
-│   │   │   ├── tdd-refactor/
-│   │   │   └── tdd-cycle/
 │   │   ├── pragmatic-code-review/       # OneRedOak — MIT
 │   │   ├── incident-response/           # wshobson — MIT
 │   │   ├── refactor-clean/              # wshobson — MIT
@@ -195,7 +190,6 @@ Every folder with sourced content gets:
    - **lackeyjb** (1 skill): playwright-skill → MIT
    - **OneRedOak** (2 skills): pragmatic-code-review, security-review → MIT
    - **wshobson** (2 skills): incident-response, refactor-clean → MIT
-   - **wshobson** (4 skills): tdd-red, tdd-green, tdd-refactor, tdd-cycle → MIT
 4. Fetch and install agents:
    - **iannuttall** (2 agents): prd-writer, project-task-planner → MIT
 5. Build runner agents (4 agents, our own composition → MIT):

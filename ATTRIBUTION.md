@@ -22,7 +22,7 @@ This repository aggregates Claude Code skills, agents, and hooks from multiple o
 
 ### wshobson (MIT)
 - [wshobson/commands](https://github.com/wshobson/commands) — Development commands
-  - refactor-clean, tdd-red, tdd-green, tdd-refactor, tdd-cycle, ml-pipeline
+  - refactor-clean, ml-pipeline
 - [wshobson/agents](https://github.com/wshobson/agents) — Specialized agents
   - langchain-architecture
 
