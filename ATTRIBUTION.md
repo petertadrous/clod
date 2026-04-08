@@ -43,6 +43,12 @@ This repository aggregates Claude Code skills, agents, and hooks from multiple o
 - [CodyLunders/claude-code-hooks-library](https://github.com/CodyLunders/claude-code-hooks-library) — Hook scripts
   - auto-format-js
 
+## Combined Skills
+
+- **security-audit** — Combines jeffallan/security-reviewer (SAST tool commands, CVSS/CWE format) + OneRedOak/security-review (false-positive filtering, confidence threshold, 3-phase methodology). License: MIT.
+- **debugging-skill** — Combines jeffallan/debugging-wizard (reference files) + original tiered methodology (Iron Law, ACH, 3-strike escalation). License: MIT.
+
 ## Original Work (MIT)
 - Runner agents: code-reviewer, design-reviewer, security-auditor, debugger
 - Python Quality Gate hook
+- debugging-skill tiered methodology (Quick Debug, Structured Investigation, Deep Diagnosis)
