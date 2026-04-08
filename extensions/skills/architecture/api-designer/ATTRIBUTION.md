@@ -5,4 +5,4 @@ This skill is derived from the [claude-skills](https://github.com/Jeffallan/clau
 - **Source file**: `skills/api-designer/`
 - **License**: MIT
 - **Original author**: Jeff Allan
-- **Modifications**: Stripped unsupported frontmatter fields for compatibility with clod skill registry.
+- **Modifications**: Stripped unsupported frontmatter fields. Added `references/middleware.md` (rate limiting, CORS, validation patterns) extracted from fullstack-guardian's `api-design-standards.md`. Updated description to cover implementation patterns.

@@ -1,1 +1,1 @@
-Based on [fullstack-guardian](https://github.com/jeffallan/claude-skills) by jeffallan. Licensed under MIT. Modifications: None.
+Based on [fullstack-guardian](https://github.com/jeffallan/claude-skills) by jeffallan. Licensed under MIT. Modifications: Removed `references/api-design-standards.md` (consolidated into the api-designer skill).

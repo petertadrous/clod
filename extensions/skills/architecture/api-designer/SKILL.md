@@ -1,6 +1,6 @@
 ---
 name: api-designer
-description: Use when designing REST or GraphQL APIs, creating OpenAPI specifications, or planning API architecture. Invoke for resource modeling, versioning strategies, pagination patterns, error handling standards.
+description: Use when designing or implementing REST/GraphQL APIs — endpoint patterns, error handling, pagination, rate limiting, CORS, validation, OpenAPI specs, and versioning strategies. Covers architecture through implementation.
 ---
 
 # API Designer
@@ -27,6 +27,7 @@ Load detailed guidance based on context:
 | Pagination | `references/pagination.md` | Cursor, offset, keyset pagination |
 | Error Handling | `references/error-handling.md` | Error responses, RFC 7807, status codes |
 | OpenAPI | `references/openapi.md` | OpenAPI 3.1, documentation, code generation |
+| Middleware | `references/middleware.md` | Rate limiting, CORS, request validation |
 
 ## Constraints
 

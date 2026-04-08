@@ -29,7 +29,7 @@ Load detailed guidance based on context:
 | Backend Patterns | `references/backend-patterns.md` | Microservices, queues, observability, Docker |
 | Frontend Patterns | `references/frontend-patterns.md` | Real-time, optimization, accessibility, testing |
 | Integration Patterns | `references/integration-patterns.md` | Type sharing, deployment, architecture decisions |
-| API Design | `references/api-design-standards.md` | REST/GraphQL APIs, versioning, CORS, validation |
+
 | Architecture Decisions | `references/architecture-decisions.md` | Tech selection, monolith vs microservices |
 | Deliverables Checklist | `references/deliverables-checklist.md` | Completing features, preparing handoff |
 
