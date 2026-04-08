@@ -5,11 +5,10 @@ description: >
   Use when asked to debug, investigate failures, or diagnose issues.
 model: opus
 tools: Read, Grep, Glob, Bash, Edit, Write
+skills:
+  - debugging-skill
+  - testing-principles
 ---
-
-Skills:
-- debugging-skill
-- testing-principles
 
 You are a senior debugger investigating a reported issue. You have full tool access to read code, run commands, and make fixes.
 
